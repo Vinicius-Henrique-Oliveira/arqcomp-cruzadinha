@@ -9,7 +9,7 @@
     { resposta: "RAM", pista: "Guarda os programas abertos enquanto você os usa. Ao desligar, perde o conteúdo." },
     { resposta: "ROM", pista: "Na versão gravada na fábrica, o computador pode ler seu conteúdo, mas não alterá-lo." },
     { resposta: "EEPROM", pista: "Guarda ajustes mesmo sem energia e permite regravar um byte por vez." },
-    { resposta: "FLASH", pista: "Guarda fotos em cartões de câmera e arquivos em pendrives, mesmo sem energia." },
+    { resposta: "FLASH", pista: "Lê e apaga dados digitais de forma RÁPIDA sem precisar de energia contínua." },
     { resposta: "CACHE", pista: "Guarda cópias perto do processador para ele encontrar mais rápido o que usa com frequência." },
     { resposta: "MEMORIADEMASSA", pista: "Que tipo de armazenamento guarda seus arquivos em HDs e SSDs mesmo após desligar?" },
     { resposta: "DMA", pista: "Permite que um dispositivo envie dados à memória sem a CPU copiar cada parte." },
