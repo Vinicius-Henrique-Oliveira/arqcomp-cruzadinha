@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arq. Comp Game · Arquitetura Computacional</title>
+  <link rel="stylesheet" href="">
+  <script defer src=""></script>
+</head>
+
+<body>
+  <header>
+    <div class="container marca"><span class="logo" aria-hidden="true">▞</span>
+      <strong></strong>
+      <span class="disciplina">Arquitetura Computacional</span>
+    </div>
+  </header>
+  <main class="container">
+    <nav aria-label="Minigames">
+      <button id="cpu" aria-pressed="true"><span aria-hidden="true">▣</span> Superaquecimento da CPU</button>
+      <button id="bits" aria-pressed="false"><span aria-hidden="true">▦</span> Decodificador de Bits</button>
+    </nav>
+    <div class="layout">
+      <section class="console" aria-labelledby="titulo">
+        <div class="cabecalho">
+          <div><small id="tipo">MODO FORCA</small>
+            <h1 id="titulo">Superaquecimento<br>da CPU</h1>
+          </div>
+          <div class="circuito" aria-hidden="true"><b id="chip">CPU</b></div>
+        </div>
+        <div class="corpo" id="rodada">
+          <div class="linha"><small id="numero"></small><button id="reiniciar" class="texto">↻ Reiniciar</button></div>
+          <div class="pista"><small>▸ PISTA DO SISTEMA</small>
+            <p id="pista"></p>
+          </div>
+          <div id="casas" class="casas" role="group" aria-label="Casas da resposta"></div>
+          <div class="linha"><small id="letrasTitulo"></small><span id="erros"></span></div>
+          <div id="letras" role="group" aria-label="Letras disponíveis"></div>
+          <form id="formulario"><label for="palpite">Tentar a palavra completa</label>
+            <div class="entrada"><input id="palpite" placeholder="Digite sua resposta" autocomplete="off"
+                spellcheck="false"><button class="acao" id="conferir">Conferir</button></div>
+          </form>
+          <p id="resultado" role="status"></p>
+          <button id="proxima" class="acao" hidden>Próxima Palavra</button>
+        </div>
+        <div id="resumo" class="corpo" hidden>
+          <h2 tabindex="-1">Missão concluída!</h2>
+          <p id="total"></p><button id="novamente" class="acao">Jogar Novamente</button>
+        </div>
+      </section>
+      <aside>
+        <section class="painel">
+          <h2><i aria-hidden="true">▣</i> Monitor do professor</h2>
+          <div class="monitor">
+            <div class="moldura"><img id="avatar" src="./assets/prof-feliz.png" alt="Professor sorridente"><span
+                id="alternativa" hidden></span></div>
+          </div>
+          <div class="fala" role="status"><b aria-hidden="true">&gt;</b><span id="mensagem"></span></div>
+        </section>
+        <section class="painel telemetria">
+          <h2><i aria-hidden="true">▥</i> Telemetria</h2>
+          <div id="termico">
+            <div class="linha"><span>Temperatura da CPU</span><strong id="graus"></strong></div>
+            <div class="barra" id="barra" aria-hidden="true"><b></b></div>
+          </div>
+          <div class="linha"><small>PROGRESSO</small><span id="percentual"></span></div>
+          <div id="progresso" aria-hidden="true"></div>
+          <p id="placar"></p>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+
+</html>
